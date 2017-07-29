@@ -6,9 +6,9 @@ My useful dotfiles.
 	* 	 Quick Start
 	* 	 Reference
 
-##Tmux
+## Tmux
 
-###Quick Start
+### Quick Start
 ```
 # install the Tmux Plugin Manager
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -18,7 +18,7 @@ $ cp .tmux.conf ~/
 # press Ctl-a I to install plugins
 # press Ctl-a R to resource the config
 ```
-###Reference
+### Reference
 Plugins:
 1. tmux-resurrect
 2. tmux-sensible
