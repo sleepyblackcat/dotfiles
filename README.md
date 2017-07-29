@@ -1,9 +1,13 @@
 # dotfiles
 My useful dotfiles.
 
-[TOC]
+## 目录
+* [Tmux](#Tmux)
+	* 	 Quick Start
+	* 	 Reference
 
-##tmux
+##Tmux
+
 ###Quick Start
 ```
 # install the Tmux Plugin Manager
