@@ -9,7 +9,7 @@ My useful dotfiles.
 ## Tmux
 
 ### Quick Start
-```
+```Bash
 # install the Tmux Plugin Manager
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # copy config file 
