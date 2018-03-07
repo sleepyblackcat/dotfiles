@@ -1,6 +1,8 @@
 [user]
         email = mituan@126.com
         name = sleepyblackcat
+[push]
+				default = simple
 [commit]
         template = ~/.gitmessage
 [alias]
