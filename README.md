@@ -5,6 +5,8 @@ My useful dotfiles.
 * [Tmux](#Tmux)
 	* 	 Quick Start
 	* 	 Reference
+* [Vim](#Vim)
+	*    Quick Start
 
 ## Tmux
 
@@ -26,3 +28,11 @@ Plugins:
 Website:
 [tmuxcheatsheet.com](https://tmuxcheatsheet.com)
 
+## Vim
+
+### Quick Start
+```Bash
+$ cd ~/.vim/bundle
+$ git clone git://github.com/altercation/vim-colors-solarized.git
+$ cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/
+```
