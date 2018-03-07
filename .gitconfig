@@ -1,0 +1,9 @@
+[user]
+        email = mituan@126.com
+        name = sleepyblackcat
+[commit]
+        template = ~/.gitmessage
+[alias]
+        gl = log --decorate --graph
+[core]
+				editor = vim
