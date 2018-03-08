@@ -33,6 +33,7 @@ set secure
 " Enable line numbers
 set number
 " Enable syntax highlighting
+filetype on
 syntax on
 " Highlight current line
 set cursorline
