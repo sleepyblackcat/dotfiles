@@ -14,17 +14,12 @@
 
 1. [Tmux](https://github.com/tmux/tmux) ：终端复用
 
-   手册：[tmuxcheatsheet](https://tmuxcheatsheet.com/)
+   Ref：[tmuxcheatsheet](https://tmuxcheatsheet.com/) [更新tmux版本](http://witkowskibartosz.com/blog/update-your-tmux-to-latest-version.html#.W2pd8P4zbOQ)
 
    ```bash
-   sudo apt-get install tmux
-   # install the Tmux Plugin Manager
-   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+   sudo apt-get install tmux xclip automake pkg-config libevent-dev libncurses-dev
    # copy config file 
    cp dotfiles/.tmux.conf ~/
-   # open tmux
-   # press Ctl-a I to install plugins
-   # press Ctl-a R to resource the config
    ```
 
 2. Vim ：文本编辑器
@@ -38,6 +33,27 @@
    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
    # you_complete_me 安装非常慢，耐心等
    vim +PluginInstall +qall
+   
+   # 安装 you_complete_me
+   sudo apt-get install build-essential cmake
+   sudo apt-get install python-dev python3-dev
+   cd ~/.vim/bundle/YouCompleteMe
+   git submodule update --init --recursive
+   ./install.py --clang-completer
+   
+   # 安装 clang-format
+   mkdir -p ~/.vim/prebuild/clang
+   curl http://releases.llvm.org/5.0.1/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04.tar.xz -o ~/.vim/prebuild/clang/llvm.tar.xz # 或者到 http://releases.llvm.org/download.html 下载对应版本 prebuilds
+   pushd ~/.vim/prebuild/clang
+   mkdir llvm
+   tar -xvf llvm.tar.xz -C llvm --strip-components 1
+   echo "export PATH=~/.vim/prebuild/clang/llvm/bin:\$PATH" >> ~/.bash_profile
+   source ~/.bash_profile
+   popd
+   
+   # 安装 vim 用的 py2
+   sudo apt-get install vim-nox-py2
+   sudo update-alternatives --config vim # 更换vim (切换python版本，现在的vim是py3，但是有很多插件只支持py2)
    ```
 
 3. Tree ：树形目录查看
@@ -52,19 +68,12 @@
 
      ```bash
      sudo apt-get install zsh
-     chsh -s $(which zsh)
      ```
 
      Oh My Zsh:
 
      ```bash
      sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-     ```
-
-     Config:
-
-     ```bash
-     
      ```
 
 5. [feh](https://feh.finalrewind.org/) / [ffmpeg](https://github.com/FFmpeg/FFmpeg) ：视频工具
