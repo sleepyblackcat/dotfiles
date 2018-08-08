@@ -1,7 +1,7 @@
-
+set number
 set nocompatible              " 去除VI一致性,必须
 set fileformat=unix            " 会显示 dos 下的 \r\n 为 ^M
-set shiftwidth=4 | set expandtab " 把 tab 键的输入变成空格，并且是 4 个
+set shiftwidth=2 | set expandtab " 把 tab 键的输入变成空格，并且是 4 个
 syntax on                          " 开启语法高亮
 
 " 配置 vundle 开始
