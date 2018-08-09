@@ -1,3 +1,4 @@
+set encoding=utf-8
 set number
 set nocompatible              " 去除VI一致性,必须
 set fileformat=unix            " 会显示 dos 下的 \r\n 为 ^M
